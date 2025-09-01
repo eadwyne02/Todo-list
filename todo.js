@@ -34,6 +34,7 @@ function loadTasks() {
 }
 function createTask(text, completed = false) {
     const list = document.createElement("li");
+    list.role = "listitem"
     const delBtn = document.createElement("button");
     const doneBtn = document.createElement("button");
     const editBtn = document.createElement("button");
