@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List App | Organize Your Day</title>
+    <meta name="description" content="A simple and easy-to-use To-Do List app to help you stay organized, track completed tasks, and manage your daily activities.">
+    <meta name="keywords" content="to-do list, task manager, productivity app, daily planner, organize tasks, checklist">
+    <meta name="author" content="Your Name">
+    
+    <meta name="author" content="Adeyi-Samuel Edwin">
+
+    <meta property="og:title" content="Simple To-Do List App">
+    <meta property="og:description" content="Organize your day with this simple To-Do List app. Add, edit, complete, and track your tasks easily.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eadwyne02.github.io/Todo-list">
+    <meta property="og:image" content="https://eadwyne02.github.io/Todo-list/todo.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Simple To-Do List App">
+    <meta name="twitter:description" content="Organize your day with this simple To-Do List app. Stay productive and manage your tasks with ease.">
+    <meta name="twitter:image" content="https://eadwyne02.github.io/Todo-list/todo.jpg">
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="todo.css">
+    <link rel="canonical" href="https://eadwyne02.github.io/Todo-list">
+    <link rel="icon" href="todo.jpg" type="image/png">
+
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Simple To-Do List App",
+        "url": "https://eadwyne02.github.io/Todo-list",
+        "description": "A simple and easy-to-use To-Do List app to help you stay organized and productive.",
+        "applicationCategory": "Productivity",
+        "operatingSystem": "All",
+        "author": {
+        "@type": "Person",
+        "name": "Edwin Adeyi-Samuel"
+        },
+        "image": "https://eadwyne02.github.io/Todo-list/todo.jpg"
+        }
+</script>
+</head>
+<body>
+    <div class="body">
+        <marquee behavior="scroll" direction="left" scrollamount = "4" class="mr-3 ml-3 mt-5" id="myMarquee" aria-label="Daily motivation">Bright and Beautiful day!! Organize your day with a To-do list</marquee>
+    <div class="card">
+        <div class="action mt-4">
+            <input type="text" placeholder="to-do task" id="entertask" class="mr-3" aria-label="Enter a new task">
+            <button id="add-btn">Add</button>
+        </div>
+        <h6 id="inputerror"></h6>
+        <div class="task todo-list">
+            <div class="info">
+                <div class="undone">
+                    <h6>To-do tasks = <h6 id="numTask">0</h6></h6>
+                </div>
+                <div class="undone done">
+                    <h6>Done tasks = <h6 id="comTask">0</h6> </h6>
+                </div>
+                <div class="undone">
+                    <h6>Undone tasks = <h6 id="uncomTask">0</h6></h6>
+                </div>
+            </div>
+            <h6 class="mt-4"><strong>To-do list for Today</strong></h6>
+            <ul id="task-list" aria-live="polite">
+            </ul>
+        </div>
+        <div id="del"></div>
+        <button id="clearList">Clear List</button>
+    </div>
+    </div>
+<script src="todo.js"></script>
+</body>
+</html>
