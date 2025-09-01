@@ -71,6 +71,7 @@ function createTask(text, completed = false) {
     editBtn.addEventListener("click", function(){
         if (editBtn.innerHTML === "Edit") {
             const input = document.createElement("input");
+            input.classList.add("edit-input")
             input.type = "text";
             input.value = list.firstChild.textContent.trim();
             list.replaceChild(input, list.firstChild);
